@@ -455,9 +455,27 @@ article:hover a div {
 /*Content screen kezdete*/
 
 .content-screen{
-    position: absolute ;
+    position: absolute;
     z-index: 3;
     width: 100vmax;
     height: 100vmax;
-    background-color: rgba(0, 0, 0, 0.6);  
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.content-card{
+
+    
+
+    position: absolute;
+
+    left:20%;
+    right: 20%;
+    z-index: 4;
+    width: 60vmax;
+    height: 40vmax;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.content-card .row{
+    position: relative;
 }

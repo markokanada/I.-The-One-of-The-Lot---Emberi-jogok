@@ -13,7 +13,7 @@
     <script src="JS/main.js"></script>
     <title>The One of The Lot - Emberi jogok</title>
 </head>
-<body onload="LoadAnimations()">
+<body onload="startUp()">
 
   <!--navbar kezdete-->
   <div class="d-md-block d-none">
@@ -69,7 +69,7 @@
     </div>
 </div>
 <!-- Slider vége-->
-<div class="content-screen">
+<div class="content-screen"></div>
   <div class="content-card">
     <div class="row">
       <div class="col-6"><h2>asd</h2>
@@ -78,9 +78,9 @@
       <div class="col-6"></div>
     </div>
     </div>
-</div>
+
     <!-- Atom -->
-    <div class="atom" >
+    <div class="atom">
         <svg viewBox="0 0 100 100">
             <g class="shadow">
               <ellipse cx="50" cy="100" rx="50" ry="5" />
@@ -93,20 +93,20 @@
               <g class="ring" transform="rotate(-30, 50, 50)">
                 <ellipse cx="50" cy="50" rx="20" ry="50" />
                 <ellipse cx="50" cy="50" rx="20" ry="50" />
-                <ellipse class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
-                <ellipse class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
+                <ellipse onclick="ContentScreenToggler(1,true)" class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
+                <ellipse onclick="ContentScreenToggler(2,true)" class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
               </g>
               <g class="ring" transform="rotate(30, 50, 50)">
                 <ellipse cx="50" cy="50" rx="20" ry="50" />
                 <ellipse cx="50" cy="50" rx="20" ry="50" />
-                <ellipse class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
-                <ellipse class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
+                <ellipse onclick="ContentScreenToggler(3,true)" class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
+                <ellipse onclick="ContentScreenToggler(4,true)" class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
               </g>
               <g class="ring" transform="rotate(90, 50, 50)">
                 <ellipse cx="50" cy="50" rx="20" ry="50" />
-                <ellipse cx="50" cy="50" rx="20" ry="50" />
-                <ellipse class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
-                <ellipse class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
+                <ellipse cx="50" cy="50" rx="20" ry="50" /> 
+                <ellipse onclick="ContentScreenToggler(5,true)" class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
+                <ellipse onclick="ContentScreenToggler(6,true)" class="animation-req sphere" cx="50" cy="50" rx="20" ry="50" />
                 
               </g>
             </g>
