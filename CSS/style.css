@@ -463,11 +463,7 @@ article:hover a div {
 }
 
 .content-card{
-
-    
-
     position: absolute;
-
     left:20%;
     right: 20%;
     z-index: 4;
@@ -478,4 +474,25 @@ article:hover a div {
 
 .content-card .row{
     position: relative;
+}
+
+.contentUL{
+    position: relative !important;
+    left: unset !important;
+    transform: unset !important;
+    padding: unset !important;
+    margin: unset !important;
+    background-color: unset !important;
+    display: unset !important;
+    border-radius: unset !important;
+    box-shadow: unset !important;
+    z-index: unset !important;
+}
+
+.contentUL li{
+    padding-left: unset !important;
+    padding-right: unset !important;
+    list-style: circle !important;
+    text-align: unset !important;
+    display: unset !important;
 }
