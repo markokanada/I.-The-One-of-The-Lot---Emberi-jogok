@@ -396,6 +396,18 @@ article:hover a div {
 /*Navbar vége*/
 
 
+/*Main card kezdete*/
+
+.card01-photo{
+    vertical-align: middle !important;
+}
+
+.text-justify{
+    text-align: justify !important;
+}
+
+/*Main card Vége*/
+
 /*Footer kezdete*/
     
 .hovereditem {
@@ -413,7 +425,7 @@ article:hover a div {
 }
 
 .hovereditem2:hover {
-    color: gold !important;
+    color: rgb(107, 23, 23) !important;
 }
 
 .text-justify {
