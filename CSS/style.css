@@ -398,8 +398,22 @@ article:hover a div {
 
 /*Main card kezdete*/
 
+.frame{
+    position: relative !important;
+}
+
 .card01-photo{
     vertical-align: middle !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
 }
 
 .text-justify{
