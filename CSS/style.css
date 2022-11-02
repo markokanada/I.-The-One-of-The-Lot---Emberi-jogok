@@ -425,3 +425,13 @@ article:hover a div {
 }
 /*Footer vége*/
 
+
+/*Content screen kezdete*/
+
+.content-screen{
+    position: absolute ;
+    z-index: 3;
+    width: 100vmax;
+    height: 100vmax;
+    background-color: rgba(0, 0, 0, 0.6);  
+}
