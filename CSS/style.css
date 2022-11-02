@@ -50,26 +50,26 @@ svg .ring ellipse:nth-child(1){
 }
 
 svg .ring ellipse:nth-child(3){
-    stroke-dasharray: 0 230;
-    animation: orbit;
-    animation-duration: 18s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    stroke-width: 7px;
-    stroke-linecap: round;
-    cursor: pointer;
+    stroke-dasharray: 0 230 !important;
+    /*animation: orbit;*/
+    animation-duration: 18s !important;
+    animation-timing-function: linear !important;
+    animation-iteration-count: infinite !important;
+    stroke-width: 7px !important;
+    stroke-linecap: round !important;
+    cursor: pointer !important;
 }
 
 svg .ring ellipse:nth-child(4){
-    stroke-dasharray: 0 230;
-    animation: orbit;
-    animation-duration: 18s;
-    animation-delay: -9s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    stroke-width: 7px;
-    stroke-linecap: round;
-    cursor: pointer;
+    stroke-dasharray: 0 230 !important;
+    /*animation: orbit;*/
+    animation-duration: 18s !important;
+    animation-delay: -9s !important;
+    animation-timing-function: linear !important;
+    animation-iteration-count: infinite !important;
+    stroke-width: 7px !important;
+    stroke-linecap: round !important;
+    cursor: pointer !important;
 }
 
 svg .ring:nth-child(2) ellipse{
@@ -80,8 +80,40 @@ svg .ring:nth-child(2) ellipse{
 
 svg .ring:nth-child(3) ellipse:nth-child(3){
 animation-delay: -6s;
+stroke: yellow;
 
 }
+
+svg .ring:nth-child(2) ellipse:nth-child(3){
+    animation-delay: -6s;
+    stroke: red;
+    
+    }
+
+svg .ring:nth-child(1) ellipse:nth-child(3){
+    animation-delay: -6s;
+    stroke: green;
+        
+    }
+
+svg .ring:nth-child(2) ellipse:nth-child(4){
+    animation-delay: -6s;
+    stroke: purple;
+        
+    }
+
+    
+svg .ring:nth-child(3) ellipse:nth-child(4){
+    animation-delay: -6s;
+    stroke: orange;
+        
+    }
+
+svg .ring:nth-child(1) ellipse:nth-child(4){
+    animation-delay: -6s;
+    stroke: blue;
+        
+    }
 
 @keyframes orbit{
     0%{
