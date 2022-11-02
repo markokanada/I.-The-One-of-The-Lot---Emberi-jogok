@@ -422,6 +422,15 @@ article:hover a div {
 
 /*Main card Vége*/
 
+/*Content kezdete*/
+
+li::marker{
+    text-align: center !important;
+    text-align-last: center !important;
+}
+
+/*Content vége*/
+
 /*Footer kezdete*/
     
 .hovereditem {
