@@ -94,15 +94,15 @@ function ContentCardContentPlacing(numOfCard) {
       "Minden személynek joga van, hogy érdekeinek védelme céljából másokkal együtt szakszervezet alapítson vagy szakszervezethez csatlakozzon.",
     ];
   }
-
+  let buttons = '<button type="button" class="btn btn-outline-info px-3 mx-3 float-start"><a class="text-decoration-none  text-dark" href="https://www.coe.int/hu/web/compass/the-universal-declaration-of-human-rights-full-version-">Forrás</a></button>'+'<button type="button" class="btn btn-outline-primary px-3 mx-3 float-end"><a class="text-decoration-none  text-dark" href="HTML/side2.html">Tovább a térképhez</a></button>'
   let innerHtml = "<h2>" + h2 + "</h2>" + "<ul>";
   if (ulElements.length > 0) {
     for (let i = 0; i < ulElements.length; i++) {
       innerHtml = innerHtml + "<li>" + ulElements[i] + "</li>";
     }
-    contentPlace.innerHTML = innerHtml + "</ul>";
+    contentPlace.innerHTML = innerHtml + "</ul>" + buttons;
   } else {
-    contentPlace.innerHTML = "<h2>" + h2 + "</h2>" + "<p>" + p + "</p>";
+    contentPlace.innerHTML = "<h2>" + h2 + "</h2>" + "<p>" + p + "</p>"+buttons;
   }
   imagePlace.innerHTML = '<img class="img-fluid d-block" src="' + img + '">';
 }
