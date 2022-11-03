@@ -466,8 +466,8 @@ li::marker{
 .content-screen{
     position: absolute;
     z-index: 3;
-    width: 100vmax;
-    height: 100vmax;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.6); 
 }
 
@@ -483,25 +483,4 @@ li::marker{
 
 .content-card .row{
     position: relative;
-}
-
-.contentUL{
-    position: relative !important;
-    left: unset !important;
-    transform: unset !important;
-    padding: unset !important;
-    margin: unset !important;
-    background-color: unset !important;
-    display: unset !important;
-    border-radius: unset !important;
-    box-shadow: unset !important;
-    z-index: unset !important;
-}
-
-.contentUL li{
-    padding-left: unset !important;
-    padding-right: unset !important;
-    list-style: circle !important;
-    text-align: unset !important;
-    display: unset !important;
 }

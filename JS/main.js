@@ -26,6 +26,7 @@ function ContentScreenToggler(numOfButton,isEnable=false){
         contentCard[0].classList.remove("d-none");
         contentCard[0].classList.add("d-block");
         ContentScreenCardSizing();
+        ContentScreenPositioning()
         ContentCardContentPlacing(numOfButton);
     }
 }
@@ -36,6 +37,12 @@ function ContentScreenCardSizing(){
     let contentScreenCard = document.getElementsByClassName("content-card")[0];
     let contentScreenTop = currentTopPosition+(0.15*currentScreenSize);
     contentScreenCard.style.top = contentScreenTop+'px';
+}
+
+function ContentScreenPositioning(){
+    let contentScreen = document.getElementsByClassName("content-screen")[0];
+    let currentTopPosition = window.scrollY;
+    contentScreen.style.top = currentTopPosition+'px';
 }
 
 function ContentCardContentPlacing(numOfCard){
@@ -71,7 +78,7 @@ function ContentCardContentPlacing(numOfCard){
         ulElements = ["Minden személynek joga van a munkához, a munka szabad megválasztásához, a méltányos és kielégítő munkafeltételekhez és a munkanélküliség elleni védelemhez.","Mindenkinek joga van egyenlő munkáért egyenlő bért kapni, bárminemű megkülönböztetés nélkül.","Mindenkinek, aki dolgozik, olyan méltányos és kielégítő fizetéshez van joga, amely számára és családja számára az emberi méltóságnak megfelelő megélhetést biztosít, és amelyet szükség esetén a szociális védelem összes egyéb eszközei egészítenek ki.","Minden személynek joga van, hogy érdekeinek védelme céljából másokkal együtt szakszervezet alapítson vagy szakszervezethez csatlakozzon."]
     }
 
-    let innerHtml = '<h2>'+h2+'</h2>'+'<ul class="contentUL">';
+    let innerHtml = '<h2>'+h2+'</h2>'+'<ul>';
     if(ulElements.length > 0){
         for(let i=0;i<ulElements.length; i++){
             innerHtml = innerHtml + '<li>' +ulElements[i]+'</li>';
