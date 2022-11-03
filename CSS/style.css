@@ -484,7 +484,7 @@ li::marker{
 .content-card .row{
     position: relative;
 }
-
+/*
 .contentUL{
     position: relative !important;
     left: unset !important;
@@ -504,4 +504,4 @@ li::marker{
     list-style: circle !important;
     text-align: unset !important;
     display: unset !important;
-}
+}*/
