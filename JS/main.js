@@ -94,7 +94,9 @@ function ContentCardContentPlacing(numOfCard) {
       "Minden személynek joga van, hogy érdekeinek védelme céljából másokkal együtt szakszervezet alapítson vagy szakszervezethez csatlakozzon.",
     ];
   }
-  let buttons = '<button type="button" class="btn btn-outline-info px-3 mx-3 float-start"><a class="text-decoration-none  text-dark" href="https://www.coe.int/hu/web/compass/the-universal-declaration-of-human-rights-full-version-">Forrás</a></button>'+'<button type="button" class="btn btn-outline-primary px-3 mx-3 float-end"><a class="text-decoration-none  text-dark" href="HTML/side2.html">Tovább a térképhez</a></button>'
+  let buttons =
+    '<button type="button" class="btn btn-outline-info px-3 mx-3 float-start"><a class="text-decoration-none  text-dark" href="https://www.coe.int/hu/web/compass/the-universal-declaration-of-human-rights-full-version-">Forrás</a></button>' +
+    '<button type="button" class="btn btn-outline-primary px-3 mx-3 float-end"><a class="text-decoration-none  text-dark" href="HTML/side2.html">Tovább a térképhez</a></button>';
   let innerHtml = "<h2>" + h2 + "</h2>" + "<ul>";
   if (ulElements.length > 0) {
     for (let i = 0; i < ulElements.length; i++) {
@@ -102,60 +104,47 @@ function ContentCardContentPlacing(numOfCard) {
     }
     contentPlace.innerHTML = innerHtml + "</ul>" + buttons;
   } else {
-    contentPlace.innerHTML = "<h2>" + h2 + "</h2>" + "<p>" + p + "</p>"+buttons;
+    contentPlace.innerHTML =
+      "<h2>" + h2 + "</h2>" + "<p>" + p + "</p>" + buttons;
   }
   imagePlace.innerHTML = '<img class="img-fluid d-block" src="' + img + '">';
 }
 
-function outClicking(){
-    ContentScreenToggler(0,false);
+function outClicking() {
+  ContentScreenToggler(0, false);
 }
 let timerOff = false;
-function afterTro(){
-    let dom = document.getElementsByClassName("dom")[0];
-    let intro = document.getElementsByClassName("animation")[0];
-    dom.classList.remove("d-none");
-    dom.classList.add("d-block")
-    intro.classList.add("d-none")
+function afterTro() {
+  let dom = document.getElementsByClassName("dom")[0];
+  let intro = document.getElementsByClassName("animation")[0];
+  dom.classList.remove("d-none");
+  dom.classList.add("d-block");
+  intro.classList.add("d-none");
 
-    const int = setInterval(blurring, 15)
+  const int = setInterval(blurring, 15);
 
-    let load = 0
+  let load = 0;
 
-    function blurring() {
-    
-        let bg = document.getElementsByClassName('dom')[0]
-    
-    
-        load++
+  function blurring() {
+    let bg = document.getElementsByClassName("dom")[0];
 
-        if (load>99) {
-            clearInterval(int)
-        }
+    load++;
 
-        bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+    if (load > 99) {
+      clearInterval(int);
     }
-    // https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
 
-    function scale (number, inMin, inMax, outMin, outMax) {
-        return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
-    }
+    bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
+  }
+  // https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+
+  function scale(number, inMin, inMax, outMin, outMax) {
+    return ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
+  }
 }
-
-//
-
-
-
-
-
-
-
-
-//
 
 function startUp() {
   LoadAnimations();
   ContentScreenToggler();
   setTimeout(afterTro, 16500);
-  
 }
