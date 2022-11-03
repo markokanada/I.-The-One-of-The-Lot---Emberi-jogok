@@ -12,9 +12,38 @@
     <!-- Main JS-->
     <script src="JS/main.js"></script>
     <title>The One of The Lot - Emberi jogok</title>
-</head>
-<body onload="startUp()">
+    <!--ScrollReveal JS Library kezdete -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--ScrollReveal JS Library vége -->
 
+    <!-- ScrollReveal JS kezdete-->
+    <!--<script>
+        ScrollReveal().reveal('.dom', {
+            delay: 20000000
+        });
+    </script>-->
+
+</head>
+<body class="main" onload="startUp()">
+
+  <div class="animation">
+    <div class="sp-container">
+      <div class="sp-content">
+          <div class="sp-globe"></div>
+          <h2 class="frame-1">Üdvözöljük</h2>
+          <h2 class="frame-2">A The One of The Lot</h2>
+          <h2 class="frame-3">Emberi jogokat feldolgozó oldalán!</h2>
+          <h2 class="frame-4">Jó szórakozást!</h2>
+          <h2 class="frame-5">
+              <span>1,</span>
+              <span>2,</span>
+              <span>3.</span>
+          </h2>
+      </div>
+  </div>
+  </div>
+
+  <div class="dom d-none">
   <!--navbar kezdete-->
   <div class="d-md-block d-none">
     <ul class="navbar-ul">
@@ -29,8 +58,8 @@
             </article>
         </li>
         <li class="px-3 navbar-li">
+          <article>
             <a href="HTML/side1.html" class="card01-text">
-                <article>
                     <div class="icon">
                       <i class="fas fa-dove fa-2x"></i>
                     </div>
@@ -80,8 +109,13 @@
 
 <!-- Card-->
 
+<div class="card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>
 
-<!---->
+<!--Card vége-->
   <!-- Atom -->
   <div class="atom">
       <svg viewBox="0 0 100 100">
@@ -147,7 +181,7 @@
 </footer>
 
 <!-- Footer vége -->
-
+</div>
 
 </body>
 </html>

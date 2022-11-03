@@ -110,8 +110,52 @@ function ContentCardContentPlacing(numOfCard) {
 function outClicking(){
     ContentScreenToggler(0,false);
 }
+let timerOff = false;
+function afterTro(){
+    let dom = document.getElementsByClassName("dom")[0];
+    let intro = document.getElementsByClassName("animation")[0];
+    dom.classList.remove("d-none");
+    dom.classList.add("d-block")
+    intro.classList.add("d-none")
+
+    const int = setInterval(blurring, 15)
+
+    let load = 0
+
+    function blurring() {
+    
+        let bg = document.getElementsByClassName('dom')[0]
+    
+    
+        load++
+
+        if (load>99) {
+            clearInterval(int)
+        }
+
+        bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+    }
+    // https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+
+    function scale (number, inMin, inMax, outMin, outMax) {
+        return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
+    }
+}
+
+//
+
+
+
+
+
+
+
+
+//
 
 function startUp() {
   LoadAnimations();
   ContentScreenToggler();
+  setTimeout(afterTro, 16500);
+  
 }
