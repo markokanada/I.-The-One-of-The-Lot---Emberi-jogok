@@ -107,6 +107,10 @@ function ContentCardContentPlacing(numOfCard) {
   imagePlace.innerHTML = '<img class="img-fluid d-block" src="' + img + '">';
 }
 
+function outClicking(){
+    ContentScreenToggler(0,false);
+}
+
 function startUp() {
   LoadAnimations();
   ContentScreenToggler();
