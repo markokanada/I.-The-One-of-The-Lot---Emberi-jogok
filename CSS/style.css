@@ -270,7 +270,7 @@ a{
 /*Banner aka Slider with Text vége*/
  /*Navbar kezdete*/
     
- ul {
+ .navbar-ul {
     position: fixed;
     left: 49%;
     transform: translate(-50%, -50%);
@@ -283,11 +283,11 @@ a{
     z-index: 10;
 }
 
-ul li a .icon .fa .icons::before {
+.navbar-ul .navbar-li a .icon .fa .icons::before {
     vertical-align: middle;
 }
 
-ul li {
+.navbar-ul .navbar-li {
     padding-left: 0%;
     padding-right: 0%;
     list-style: none;
@@ -295,16 +295,16 @@ ul li {
     display: block;
 }
 
-ul li:last-child {
+.navbar-ul .navbar-li:last-child {
     border-right: none;
 }
 
-ul li a {
+.navbar-ul .navbar-li a {
     text-decoration: none;
     display: block;
 }
 
-ul li a .icon {
+.navbar-ul .navbar-li a .icon {
     width: 90%;
     height: 90%;
     text-align: center;
@@ -312,7 +312,7 @@ ul li a .icon {
     margin: 0 auto;
 }
 
-ul li a .icon .fa {
+.navbar-ul .navbar-li a .icon .fa {
     width: 90%;
     height: 90%;
     line-height: 90%;
