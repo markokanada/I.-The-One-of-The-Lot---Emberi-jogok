@@ -51,9 +51,11 @@ function ContentCardContentPlacing(numOfCard){
     let h2 = "";
     let ulElements = [];
     let p = "";
+    let img = ""
     if(numOfCard==1){
         h2 = "2. cikk"
         p = "A jelen nyilatkozatban kinyilvánított összes jogok és szabadságok fajra, színre, nemre, nyelvre, vallásra, politikai vagy más véleményre, nemzeti vagy társadalmi származásra, vagyonra, születésre vagy más körülményre vonatkozó mindennemű megkülönböztetés nélkül mindenkit megilletnek. Ezenfelül nem lehet semmiféle megkülönböztetést tenni annak az országnak vagy területnek a politikai, jogi vagy nemzetközi helyzete alapján sem, amelynek a személy állampolgára, aszerint, hogy az illető ország vagy terület független, gyámság alatt áll, nem autonóm vagy szuverenitása bármely vonatkozásban korlátozott.";
+        img = "IMG/abuse_1.jpg"
     }
 
     if(numOfCard==2){
@@ -64,6 +66,7 @@ function ContentCardContentPlacing(numOfCard){
     if(numOfCard=="3"){
         h2 = "8. cikk"
         p = "Minden személynek joga van az alkotmányban vagy a törvényben részére biztosított alapvető jogokat sértő eljárások ellen az illetékes hazai bíróságokhoz tényleges jogorvoslatért folyamodni.";
+        img = "IMG/abuse_2.jpg"
     }
     if(numOfCard==4){
         h2 = "12. cikk"
@@ -72,6 +75,7 @@ function ContentCardContentPlacing(numOfCard){
     if(numOfCard==5){
         h2 = "16. cikk"
         ulElements = ["Mind a férfinak, mind a nőnek a nagykorúság elérésétől kezdve joga van fajon, nemzetiségen vagy valláson alapuló korlátozás nélkül házasságot kötni és családot alapítani. A házasság tekintetében a férfinak és a nőnek mind a házasság tartama alatt, mind a házasság felbontása tekintetében egyenlő jogai vannak.","Házasságot csak a jövendő házastársak szabad és teljes beleegyezésével lehet kötni.","A család a társadalom természetes és alapvető alkotóeleme, és joga van a társadalom, valamint az állam védelmére."]
+        img = "IMG/abuse_3.jpg"
     }
     if(numOfCard==6){
         h2 = "23. cikk"
@@ -89,8 +93,7 @@ function ContentCardContentPlacing(numOfCard){
     else{
         contentPlace.innerHTML='<h2>'+h2+'</h2>'+'<p>'+p+'</p>';
     }
-
- 
+    imagePlace.innerHTML='<img class="img-fluid d-block" src="'+img+'">'
 }
 
 function startUp(){
