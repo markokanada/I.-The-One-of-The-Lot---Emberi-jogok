@@ -160,8 +160,6 @@ function autoAlignment() {
   let button = document.getElementsByClassName("auto-align-button")[0];
   let h2 = document.getElementsByClassName("auto-align-h2")[0];
   let numberOfAlignables = alignables.length;
-  let h2Size = h2.offsetHeight;
-  let buttonSize = button.offsetHeight;
   //let maxWidth = 0
   let maxHeight = 0;
   let currentHeight = 0;
@@ -172,6 +170,8 @@ function autoAlignment() {
 
   for (let i = 0; i < numberOfAlignables; i++) {
     if (alignables[i].classList.contains("auto-align-p")) {
+      let h2Size = h2.offsetHeight;
+      let buttonSize = button.offsetHeight;
       //maxWidth = doms[i].offsetWidth;
       maxHeight = doms[i].offsetHeight;
       isDone = false;
@@ -193,7 +193,7 @@ function autoAlignment() {
       }
     }
 
-    if (i != numberOfAlignables-1) {
+    if (i != numberOfAlignables - 1) {
       if (
         alignables[i].classList.contains("auto-align-button") &&
         alignables[i + 1].classList.contains("auto-align-button")
@@ -216,12 +216,33 @@ function autoAlignment() {
             isDone = true;
           }
           alignables[i].style.fontSize = newSize + "px";
-          alignables[i+1].style.fontSize = newSize + "px";
+          alignables[i + 1].style.fontSize = newSize + "px";
         }
-
-        console.log(currentWidth, maxWidth, defaultSize, newSize);
       }
     }
+    /*
+    if (alignables[i].classList.contains("auto-align-h2")) {
+      maxHeight = doms[i].offsetHeight;
+      maxWidth = doms[i].offsetWidth;
+      isDone = false;
+      defaultSize = window.getComputedStyle(alignables[i]).fontSize + ".";
+      newSize = defaultSize.slice(0, defaultSize.indexOf("px"));
+      while (isDone == false) {
+        currentHeight = alignables[i].offsetHeight;
+        currentWidth = alignables[i].offsetWidth;
+
+        if (currentWidth > maxWidth || currentHeight > maxHeight - 20) {
+          newSize = newSize - 1;
+          isDone = false;
+        }
+
+        if (currentWidth <= maxWidth - 20 && currentHeight <= maxHeight - 20) {
+          isDone = true;
+        }
+        alignables[i].style.fontSize = newSize + "px";
+      }
+    }
+    */
   }
 }
 
