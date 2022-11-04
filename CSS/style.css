@@ -413,9 +413,26 @@ article:hover a div {
 
 /*Content kezdete*/
 
-li::marker {
-  text-align: center !important;
-  text-align-last: center !important;
+.leaders li{
+  padding: 1%;
+}
+
+.leaders{
+  margin-right: 0% !important;
+}
+
+.content-ul{
+  list-style-type: none !important;
+  margin-right: 0% !important;
+}
+
+.hovereditem3 {
+  color: black !important;
+  transition: 0.5s;
+}
+
+.hovereditem3:hover {
+  color: rgb(107, 23, 23) !important;
 }
 
 /*Content vége*/
