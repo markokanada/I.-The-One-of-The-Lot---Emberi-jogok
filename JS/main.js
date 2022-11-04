@@ -28,7 +28,6 @@ function ContentScreenToggler(numOfButton, isEnable = false) {
     ContentScreenCardSizing();
     ContentScreenPositioning();
     ContentCardContentPlacing(numOfButton);
-    
   }
 }
 
@@ -96,9 +95,9 @@ function ContentCardContentPlacing(numOfCard) {
     ];
   }
   let buttons =
-    '<button type="button" class="btn btn-outline-info px-3 mx-3 float-start"><a class="text-decoration-none  text-dark" href="https://www.coe.int/hu/web/compass/the-universal-declaration-of-human-rights-full-version-">Forrás</a></button>' +
-    '<button type="button" class="btn btn-outline-primary px-3 mx-3 float-end"><a class="text-decoration-none  text-dark" href="HTML/side2.html">Tovább a térképhez</a></button>';
-  let innerHtml = "<h2>" + h2 + "</h2>" + "<ul>";
+    '<button type="button" class="auto-align-button btn btn-outline-info px-3 mx-3 float-start"><a class="text-decoration-none  text-dark" href="https://www.coe.int/hu/web/compass/the-universal-declaration-of-human-rights-full-version-">Forrás</a></button>' +
+    '<button type="button" class="auto-align-button btn btn-outline-primary px-3 mx-3 float-end"><a class="text-decoration-none  text-dark" href="HTML/side2.html">Tovább a térképhez</a></button>';
+  let innerHtml = "<h2 class='auto-align-h2'>" + h2 + "</h2>" + "<ul>";
   if (ulElements.length > 0) {
     for (let i = 0; i < ulElements.length; i++) {
       innerHtml = innerHtml + "<li>" + ulElements[i] + "</li>";
@@ -106,11 +105,17 @@ function ContentCardContentPlacing(numOfCard) {
     contentPlace.innerHTML = innerHtml + "</ul>" + buttons;
   } else {
     contentPlace.innerHTML =
-      "<h2>" + h2 + "</h2>" + '<p class="text-justify auto-align">' + p + "</p>" + buttons;
+      "<h2 class='auto-align-h2'>" +
+      h2 +
+      "</h2 >" +
+      '<p class="text-justify auto-align">' +
+      p +
+      "</p>" +
+      buttons;
   }
   imagePlace.innerHTML = '<img class="img-fluid d-block" src="' + img + '">';
-  
-  autoAlignment()
+
+  autoAlignment();
 }
 
 function outClicking() {
@@ -144,48 +149,57 @@ function afterTro() {
   function scale(number, inMin, inMax, outMin, outMax) {
     return ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
   }
+
+  let body = document.getElementsByClassName("main")[0];
+  body.style.backgroundImage = "linear-gradient(#2a3e4d, #255c72)";
 }
 
-function autoAlignment(){
-  let doms = document.getElementsByClassName("auto-align-dom")
-  let alignables = document.getElementsByClassName("auto-align")
-  let numberOfAlignables = alignables.length
+function autoAlignment() {
+  let doms = document.getElementsByClassName("auto-align-dom");
+  let alignables = document.getElementsByClassName("auto-align");
+  let button = document.getElementsByClassName("auto-align-button")[0];
+  let h2 = document.getElementsByClassName("auto-align-h2")[0];
+  let numberOfAlignables = alignables.length;
+  let h2Size = h2.offsetHeight;
+  let buttonSize = button.offsetHeight;
   //let maxWidth = 0
-  let maxHeight =0
-  let currentHeight = 0
+  let maxHeight = 0;
+  let currentHeight = 0;
   //let currentWidth = 0
-  let defaultSize = 0
-  let newSize = 0
-  let isDone = false
+  let defaultSize = 0;
+  let newSize = 0;
+  let isDone = false;
 
-  for(let i=0; i<numberOfAlignables; i++){
+  for (let i = 0; i < numberOfAlignables; i++) {
     //maxWidth = doms[i].offsetWidth;
     maxHeight = doms[i].offsetHeight;
-    isDone = false
-    defaultSize = window.getComputedStyle(alignables[i]).fontSize+"."
-    newSize = defaultSize.slice(0,defaultSize.indexOf("px"))
-    while(isDone == false){
+    isDone = false;
+    defaultSize = window.getComputedStyle(alignables[i]).fontSize + ".";
+    newSize = defaultSize.slice(0, defaultSize.indexOf("px"));
+    while (isDone == false) {
       currentHeight = alignables[i].offsetHeight;
       //currentWidth = alignables[i].offsetWidth;
 
-      if(currentHeight > maxHeight-20){
-        newSize = newSize-1
-        isDone = false
+      if (currentHeight > maxHeight - 20 - h2Size - buttonSize) {
+        newSize = newSize - 1;
+        isDone = false;
       }
 
-      if(currentHeight <= maxHeight-20){
-        isDone = true
+      if (currentHeight <= maxHeight - 20 - h2Size - buttonSize) {
+        isDone = true;
       }
-      alignables[i].style.fontSize = newSize+"px"
-      console.log(defaultSize,newSize,currentHeight,maxHeight)
+      alignables[i].style.fontSize = newSize + "px";
     }
-
   }
-
 }
 
-function startUp() {
-  LoadAnimations();
-  ContentScreenToggler();
-  setTimeout(afterTro, 16500);
+function startUp(ver) {
+  if (ver == 1) {
+    LoadAnimations();
+    ContentScreenToggler();
+    setTimeout(afterTro, 16500);
+  }
+  if (ver == 2) {
+    ContentScreenToggler();
+  }
 }
