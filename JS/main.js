@@ -28,6 +28,7 @@ function ContentScreenToggler(numOfButton, isEnable = false) {
     ContentScreenCardSizing();
     ContentScreenPositioning();
     ContentCardContentPlacing(numOfButton);
+    
   }
 }
 
@@ -74,7 +75,7 @@ function ContentCardContentPlacing(numOfCard) {
   if (numOfCard == 4) {
     h2 = "12. cikk";
     p =
-      "Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez.";
+      "Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez. Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez. Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez. Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez. Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez. Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez. Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez. Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez. Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez. ";
   }
   if (numOfCard == 5) {
     h2 = "16. cikk";
@@ -105,9 +106,11 @@ function ContentCardContentPlacing(numOfCard) {
     contentPlace.innerHTML = innerHtml + "</ul>" + buttons;
   } else {
     contentPlace.innerHTML =
-      "<h2>" + h2 + "</h2>" + "<p>" + p + "</p>" + buttons;
+      "<h2>" + h2 + "</h2>" + '<p class="text-justify auto-align">' + p + "</p>" + buttons;
   }
   imagePlace.innerHTML = '<img class="img-fluid d-block" src="' + img + '">';
+  
+  autoAlignment()
 }
 
 function outClicking() {
@@ -141,6 +144,44 @@ function afterTro() {
   function scale(number, inMin, inMax, outMin, outMax) {
     return ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
   }
+}
+
+function autoAlignment(){
+  let doms = document.getElementsByClassName("auto-align-dom")
+  let alignables = document.getElementsByClassName("auto-align")
+  let numberOfAlignables = alignables.length
+  //let maxWidth = 0
+  let maxHeight =0
+  let currentHeight = 0
+  //let currentWidth = 0
+  let defaultSize = 0
+  let newSize = 0
+  let isDone = false
+
+  for(let i=0; i<numberOfAlignables; i++){
+    //maxWidth = doms[i].offsetWidth;
+    maxHeight = doms[i].offsetHeight;
+    isDone = false
+    defaultSize = window.getComputedStyle(alignables[i]).fontSize+"."
+    newSize = defaultSize.slice(0,defaultSize.indexOf("px"))
+    while(isDone == false){
+      currentHeight = alignables[i].offsetHeight;
+      //currentWidth = alignables[i].offsetWidth;
+
+      if(currentHeight > maxHeight-20){
+        newSize = newSize-1
+        isDone = false
+      }
+
+      if(currentHeight <= maxHeight-20){
+        isDone = true
+      }
+      alignables[i].style.fontSize = newSize+"px"
+      console.log(defaultSize,newSize,currentHeight,maxHeight)
+    }
+
+  }
+
 }
 
 function startUp() {
