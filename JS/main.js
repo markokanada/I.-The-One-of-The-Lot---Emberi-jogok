@@ -121,7 +121,7 @@ function ContentCardContentPlacing(numOfCard) {
 function outClicking() {
   ContentScreenToggler(0, false);
 }
-let timerOff = false;
+
 function afterTro() {
   let dom = document.getElementsByClassName("dom")[0];
   let intro = document.getElementsByClassName("animation")[0];
