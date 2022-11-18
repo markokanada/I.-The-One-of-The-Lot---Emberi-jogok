@@ -128,8 +128,9 @@ function afterTro(ver) {
   dom.classList.remove("d-none");
   dom.classList.add("d-block");
   intro.classList.add("d-none");
-  if(ver != 1){
-  const int = setInterval(blurring, 15);}
+  if (ver != 1) {
+    const int = setInterval(blurring, 15);
+  }
   let load = 0;
 
   function blurring() {
@@ -265,8 +266,8 @@ function autoAlignment(isTheAligmentFromContentCard) {
   }
 }
 
-function beforeTro(){
-  animation = document.getElementsByClassName("animation-body")[0]
+function beforeTro() {
+  animation = document.getElementsByClassName("animation-body")[0];
   animation.innerHTML = `    <div class="animation">
   <div class="sp-container">
   <div class="sp-content auto-align-dom">
@@ -290,29 +291,29 @@ function beforeTro(){
       <span>3.</span>
     </h2>
   </div>
-</div></div>`
-body = document.getElementsByClassName("main")[0];
-body.setAttribute("style","background: #310404 no-repeat center center fixed;")
+</div></div>`;
+  body = document.getElementsByClassName("main")[0];
+  body.setAttribute(
+    "style",
+    "background: #310404 no-repeat center center fixed;"
+  );
 }
 
 function startUp(ver) {
   if (ver == 1) {
     LoadAnimations();
     ContentScreenToggler();
-    
+
     autoAlignment(false);
-    if(!localStorage.getItem("visited")){
+    if (!localStorage.getItem("visited")) {
       beforeTro();
       setTimeout(afterTro, 16500);
-      localStorage.setItem("visited",true);
-   }
-   else{
-    afterTro(1)
-   }
+      localStorage.setItem("visited", true);
+    } else {
+      afterTro(1);
+    }
   }
   if (ver == 2) {
     ContentScreenToggler();
   }
-
-
 }

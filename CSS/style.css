@@ -617,6 +617,8 @@ p.demos {
   -ms-animation-delay: 18s;
   animation-delay: 18s;
 }
+
+/*animation*/
 .sp-container {
   position: fixed;
   top: 0px;
@@ -722,7 +724,7 @@ p.demos {
   animation-delay: 14s;
 }
 
-/**/
+/*animation end*/
 
 @-webkit-keyframes blurFadeInOut {
   0% {
