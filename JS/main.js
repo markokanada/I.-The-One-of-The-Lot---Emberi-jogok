@@ -158,7 +158,8 @@ function autoAlignment() {
   let doms = document.getElementsByClassName("auto-align-dom");
   let alignables = document.getElementsByClassName("auto-align");
   let button = document.getElementsByClassName("auto-align-button")[0];
-  let h2 = document.getElementsByClassName("auto-align-h2")[0];
+  let h2 = document.getElementsByClassName("auto-align-h2");
+  let screen = window.innerWidth;
   let numberOfAlignables = alignables.length;
   //let maxWidth = 0
   let maxHeight = 0;
@@ -191,6 +192,13 @@ function autoAlignment() {
         }
         alignables[i].style.fontSize = newSize + "px";
       }
+    }
+    if(alignables[i].classList.contains("auto-align-div")){
+      fullWidth =screen-screen/10*2
+      marginSize = screen/10*2
+      alignables[i].style.width = fullWidth + "px";
+      alignables[i].style.left = marginSize/2 + "px";
+      alignables[i].style.display = "inline-block";
     }
 
     if (i != numberOfAlignables - 1) {
@@ -251,8 +259,10 @@ function startUp(ver) {
     LoadAnimations();
     ContentScreenToggler();
     setTimeout(afterTro, 16500);
+    autoAlignment();
   }
   if (ver == 2) {
     ContentScreenToggler();
   }
+  
 }

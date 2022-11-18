@@ -3,7 +3,6 @@
 .atom {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(#2a3e4d, #255c72);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -898,4 +897,45 @@ p.demos {
 
 .dom {
   filter: blur(15px);
+}
+/* Main felsorolás*/
+
+#main-ul{
+  font-size: 120%;
+}
+
+#main-ul li:nth-child(4){
+  color: purple;
+}
+
+#main-ul li:nth-child(2){
+  color: blue;
+}
+#main-ul li:nth-child(3){
+  color: yellow;
+}
+
+#main-ul li:nth-child(5){
+  color: orange;
+}
+
+#main-ul li:nth-child(1){
+  color: green;
+}
+
+#main-ul li:nth-child(6){
+  color: red;
+}
+
+.vertical-align-middle{
+  vertical-align: middle !important;
+}
+
+.card{
+  background: rgba( 255, 255, 255, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
