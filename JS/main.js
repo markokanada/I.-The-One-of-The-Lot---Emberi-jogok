@@ -115,7 +115,7 @@ function ContentCardContentPlacing(numOfCard) {
   }
   imagePlace.innerHTML = '<img class="img-fluid d-block" src="' + img + '">';
 
-  autoAlignment();
+  autoAlignment(true);
 }
 
 function outClicking() {
@@ -154,7 +154,7 @@ function afterTro() {
   body.style.backgroundImage = "linear-gradient(#2a3e4d, #255c72)";
 }
 
-function autoAlignment() {
+function autoAlignment(isTheAligmentFromContentCard) {
   let doms = document.getElementsByClassName("auto-align-dom");
   let alignables = document.getElementsByClassName("auto-align");
   let button = document.getElementsByClassName("auto-align-button")[0];
@@ -169,66 +169,67 @@ function autoAlignment() {
   let newSize = 0;
   let isDone = false;
 
-  for (let i = 0; i < numberOfAlignables; i++) {
-    if (alignables[i].classList.contains("auto-align-p")) {
-      let h2Size = h2.offsetHeight;
-      let buttonSize = button.offsetHeight;
-      //maxWidth = doms[i].offsetWidth;
-      maxHeight = doms[i].offsetHeight;
-      isDone = false;
-      defaultSize = window.getComputedStyle(alignables[i]).fontSize + ".";
-      newSize = defaultSize.slice(0, defaultSize.indexOf("px"));
-      while (isDone == false) {
-        currentHeight = alignables[i].offsetHeight;
-        //currentWidth = alignables[i].offsetWidth;
-
-        if (currentHeight > maxHeight - 20 - h2Size - buttonSize) {
-          newSize = newSize - 1;
-          isDone = false;
-        }
-
-        if (currentHeight <= maxHeight - 20 - h2Size - buttonSize) {
-          isDone = true;
-        }
-        alignables[i].style.fontSize = newSize + "px";
-      }
-    }
-    if(alignables[i].classList.contains("auto-align-div")){
-      fullWidth =screen-screen/10*2
-      marginSize = screen/10*2
-      alignables[i].style.width = fullWidth + "px";
-      alignables[i].style.left = marginSize/2 + "px";
-      alignables[i].style.display = "inline-block";
-    }
-
-    if (i != numberOfAlignables - 1) {
-      if (
-        alignables[i].classList.contains("auto-align-button") &&
-        alignables[i + 1].classList.contains("auto-align-button")
-      ) {
-        maxWidth = doms[i].offsetWidth;
+  if (isTheAligmentFromContentCard) {
+    for (let i = 0; i < numberOfAlignables; i++) {
+      if (alignables[i].classList.contains("auto-align-p")) {
+        let h2Size = h2.offsetHeight;
+        let buttonSize = button.offsetHeight;
+        //maxWidth = doms[i].offsetWidth;
+        maxHeight = doms[i].offsetHeight;
         isDone = false;
         defaultSize = window.getComputedStyle(alignables[i]).fontSize + ".";
         newSize = defaultSize.slice(0, defaultSize.indexOf("px"));
         while (isDone == false) {
-          //currentHeight = alignables[i].offsetHeight;
-          currentWidth =
-            alignables[i].offsetWidth + alignables[i + 1].offsetWidth;
+          currentHeight = alignables[i].offsetHeight;
+          //currentWidth = alignables[i].offsetWidth;
 
-          if (currentWidth > maxWidth - 20) {
+          if (currentHeight > maxHeight - 20 - h2Size - buttonSize) {
             newSize = newSize - 1;
             isDone = false;
           }
 
-          if (currentWidth <= maxWidth - 20) {
+          if (currentHeight <= maxHeight - 20 - h2Size - buttonSize) {
             isDone = true;
           }
           alignables[i].style.fontSize = newSize + "px";
-          alignables[i + 1].style.fontSize = newSize + "px";
         }
       }
-    }
-    /*
+      if (alignables[i].classList.contains("auto-align-div")) {
+        fullWidth = screen - (screen / 10) * 2;
+        marginSize = (screen / 10) * 2;
+        alignables[i].style.width = fullWidth + "px";
+        alignables[i].style.left = marginSize / 2 + "px";
+        alignables[i].style.display = "inline-block";
+      }
+
+      if (i != numberOfAlignables - 1) {
+        if (
+          alignables[i].classList.contains("auto-align-button") &&
+          alignables[i + 1].classList.contains("auto-align-button")
+        ) {
+          maxWidth = doms[i].offsetWidth;
+          isDone = false;
+          defaultSize = window.getComputedStyle(alignables[i]).fontSize + ".";
+          newSize = defaultSize.slice(0, defaultSize.indexOf("px"));
+          while (isDone == false) {
+            //currentHeight = alignables[i].offsetHeight;
+            currentWidth =
+              alignables[i].offsetWidth + alignables[i + 1].offsetWidth;
+
+            if (currentWidth > maxWidth - 20) {
+              newSize = newSize - 1;
+              isDone = false;
+            }
+
+            if (currentWidth <= maxWidth - 20) {
+              isDone = true;
+            }
+            alignables[i].style.fontSize = newSize + "px";
+            alignables[i + 1].style.fontSize = newSize + "px";
+          }
+        }
+      }
+      /*
     if (alignables[i].classList.contains("auto-align-h2")) {
       maxHeight = doms[i].offsetHeight;
       maxWidth = doms[i].offsetWidth;
@@ -251,6 +252,17 @@ function autoAlignment() {
       }
     }
     */
+    }
+  } else if (!isTheAligmentFromContentCard) {
+    for (let i = 0; i < numberOfAlignables; i++) {
+      if (alignables[i].classList.contains("auto-align-div")) {
+        fullWidth = screen - (screen / 10) * 2;
+        marginSize = (screen / 10) * 2;
+        alignables[i].style.width = fullWidth + "px";
+        alignables[i].style.left = marginSize / 2 + "px";
+        alignables[i].style.display = "inline-block";
+      }
+    }
   }
 }
 
@@ -259,10 +271,9 @@ function startUp(ver) {
     LoadAnimations();
     ContentScreenToggler();
     setTimeout(afterTro, 16500);
-    autoAlignment();
+    autoAlignment(false);
   }
   if (ver == 2) {
     ContentScreenToggler();
   }
-  
 }

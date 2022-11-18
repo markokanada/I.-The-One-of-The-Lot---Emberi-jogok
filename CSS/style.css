@@ -490,95 +490,105 @@ article:hover a div {
   margin: 3px;
 }
 
-.content-card #content-image{
+.content-card #content-image {
   margin-top: 5px;
 }
 
-@media screen and  (min-width: 1455px) {
-  .content-card{
+@media screen and (min-width: 1455px) {
+  .content-card {
     left: auto;
     right: auto;
     height: 40vmax;
   }
-  
 }
 
 @media screen and (max-width: 848px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
-    height: 45vmax;}
+    height: 45vmax;
+  }
 }
 
 @media screen and (max-width: 750px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
-    height: 50vmax;}
+    height: 50vmax;
+  }
 }
 
 @media screen and (max-width: 715px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
-    height: 55vmax;}
+    height: 55vmax;
+  }
 }
 
 @media screen and (max-width: 593px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
-    height: 60vmax;}
+    height: 60vmax;
+  }
 }
 
 @media screen and (max-width: 533px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
-    height: 65vmax;}
+    height: 65vmax;
+  }
 }
 
 @media screen and (max-width: 465px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
-    height: 70vmax;}
+    height: 70vmax;
+  }
 }
 
 @media screen and (max-width: 409px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
-    height: 75vmax;}
+    height: 75vmax;
+  }
 }
 
 @media screen and (max-width: 407px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
-    height: 80vmax;}
+    height: 80vmax;
+  }
 }
 
 @media screen and (max-width: 365px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
-    height: 85vmax;}
+    height: 85vmax;
+  }
 }
 
 @media screen and (max-width: 360px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
-    height: 90vmax;}
+    height: 90vmax;
+  }
 }
 
 @media screen and (max-width: 350px) {
-  .content-card{
+  .content-card {
     left: auto;
     right: auto;
     top: 595px !important;
-    height: 100vmax;}
+    height: 100vmax;
+  }
 }
 
 /*Startup*/
@@ -900,42 +910,42 @@ p.demos {
 }
 /* Main felsorolás*/
 
-#main-ul{
+#main-ul {
   font-size: 120%;
 }
 
-#main-ul li:nth-child(4){
+#main-ul li:nth-child(4) {
   color: purple;
 }
 
-#main-ul li:nth-child(2){
+#main-ul li:nth-child(2) {
   color: blue;
 }
-#main-ul li:nth-child(3){
+#main-ul li:nth-child(3) {
   color: yellow;
 }
 
-#main-ul li:nth-child(5){
+#main-ul li:nth-child(5) {
   color: orange;
 }
 
-#main-ul li:nth-child(1){
+#main-ul li:nth-child(1) {
   color: green;
 }
 
-#main-ul li:nth-child(6){
+#main-ul li:nth-child(6) {
   color: red;
 }
 
-.vertical-align-middle{
+.vertical-align-middle {
   vertical-align: middle !important;
 }
 
-.card{
-  background: rgba( 255, 255, 255, 0.5 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 20px );
-  -webkit-backdrop-filter: blur( 20px );
+.card {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
