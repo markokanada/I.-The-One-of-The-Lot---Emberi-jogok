@@ -122,20 +122,19 @@ function outClicking() {
   ContentScreenToggler(0, false);
 }
 
-function afterTro() {
+function afterTro(ver) {
   let dom = document.getElementsByClassName("dom")[0];
-  let intro = document.getElementsByClassName("animation")[0];
+  let intro = document.getElementsByClassName("animation-body")[0];
   dom.classList.remove("d-none");
   dom.classList.add("d-block");
   intro.classList.add("d-none");
-
-  const int = setInterval(blurring, 15);
-
+  if(ver != 1){
+  const int = setInterval(blurring, 15);}
   let load = 0;
 
   function blurring() {
     let bg = document.getElementsByClassName("dom")[0];
-
+    bg.style.filter = "blur 15px";
     load++;
 
     if (load > 99) {
@@ -266,14 +265,54 @@ function autoAlignment(isTheAligmentFromContentCard) {
   }
 }
 
+function beforeTro(){
+  animation = document.getElementsByClassName("animation-body")[0]
+  animation.innerHTML = `    <div class="animation">
+  <div class="sp-container">
+  <div class="sp-content auto-align-dom">
+    <h2 class="frame-1 auto-align auto-align-h2">Üdvözöljük</h2>
+  </div>
+  <div class="sp-content auto-align-dom">
+    <h2 class="frame-2 auto-align auto-align-h2">A The One of The Lot</h2>
+  </div>
+  <div class="sp-content auto-align-dom">
+    <h2 class="frame-3 auto-align auto-align-h2">
+      Emberi jogokat feldolgozó oldalán!
+    </h2>
+  </div>
+  <div class="sp-content auto-align-dom">
+    <h2 class="frame-4 auto-align auto-align-h2">Jó szórakozást!</h2>
+  </div>
+  <div class="sp-content auto-align-dom">
+    <h2 class="frame-5 auto-align auto-align-h2">
+      <span>1,</span>
+      <span>2,</span>
+      <span>3.</span>
+    </h2>
+  </div>
+</div></div>`
+body = document.getElementsByClassName("main")[0];
+body.setAttribute("style","background: #310404 no-repeat center center fixed;")
+}
+
 function startUp(ver) {
   if (ver == 1) {
     LoadAnimations();
     ContentScreenToggler();
-    setTimeout(afterTro, 16500);
+    
     autoAlignment(false);
+    if(!localStorage.getItem("visited")){
+      beforeTro();
+      setTimeout(afterTro, 16500);
+      localStorage.setItem("visited",true);
+   }
+   else{
+    afterTro(1)
+   }
   }
   if (ver == 2) {
     ContentScreenToggler();
   }
+
+
 }

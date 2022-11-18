@@ -596,8 +596,6 @@ article:hover a div {
 @import url("https://fonts.googleapis.com/css?family=Barlow");
 
 body.main {
-  background: #310404 url(../IMG/outerspace-70.gif) no-repeat center center
-    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -905,9 +903,6 @@ p.demos {
 
 /*blur*/
 
-.dom {
-  filter: blur(15px);
-}
 /* Main felsorolás*/
 
 #main-ul {
