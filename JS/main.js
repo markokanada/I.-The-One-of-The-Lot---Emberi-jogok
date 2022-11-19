@@ -119,7 +119,7 @@ function ContentCardContentPlacing(numOfCard) {
   }
   imagePlace.innerHTML = '<img class="img-fluid d-block" src="' + img + '">';
 
-  //autoAlignment(true);
+  autoAlignment(true);
 }
 
 function outClicking() {
@@ -186,7 +186,7 @@ function autoAlignment(isTheAligmentFromContentCard) {
         while (isDone == false) {
           currentHeight = alignables[i].offsetHeight;
           //currentWidth = alignables[i].offsetWidth;
-          //console.log({"isdone":isDone,"currentHeight":currentHeight,"maxHeight":maxHeight,"newSize":newSize,"maxHeightCalc":(maxHeight - 20 - h2Size - buttonSize),"h2Size":h2Size,"buttonSize":buttonSize})
+          console.log({"i":i,"isdone":isDone,"currentHeight":currentHeight,"maxHeight":maxHeight,"newSize":newSize,"maxHeightCalc":(maxHeight - 20 - h2Size - buttonSize),"h2Size":h2Size,"buttonSize":buttonSize})
 
           if (currentHeight > maxHeight - 20 - h2Size - buttonSize) {
             newSize = newSize - 1;
