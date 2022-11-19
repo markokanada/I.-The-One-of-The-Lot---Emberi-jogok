@@ -315,5 +315,10 @@ function startUp(ver) {
   }
   if (ver == 2) {
     ContentScreenToggler();
+    autoAlignment(false);
+  }
+
+  if (ver == 3) {
+    autoAlignment(false);
   }
 }
