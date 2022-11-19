@@ -251,16 +251,16 @@ function autoAlignment(isTheAligmentFromContentCard) {
           maxHeight =
             document.getElementsByClassName("content-card")[0].offsetHeight;
           currentButtonSize = alignables[i].offsetHeight;
-          console.log({
+          /*console.log({
             Size: size,
             marginValue: maxHeight - maxHeight / 10 - currentButtonSize + "px",
             currentButtonSize: currentButtonSize,
             maxHeight: maxHeight,
-          });
+          });*/
           alignables[i].style.marginTop =
-            maxHeight - maxHeight / 10 - currentButtonSize - size + "px";
+            maxHeight - maxHeight / 8 - currentButtonSize - size + "px";
           alignables[i + 1].style.marginTop =
-            maxHeight - maxHeight / 10 - currentButtonSize - size + "px";
+            maxHeight - maxHeight / 8 - currentButtonSize - size + "px";
         }
       }
       /*
