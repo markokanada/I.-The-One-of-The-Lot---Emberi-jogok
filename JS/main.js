@@ -296,11 +296,12 @@ function autoAlignment(isTheAligmentFromContentCard) {
         alignables[i].style.left = marginSize / 2 + "px";
         alignables[i].style.display = "inline-block";
       }
-      if (alignables[i].classList.contains("auto-align-div-height")){
-        row = alignables[i].closest(".parent")
+      if (alignables[i].classList.contains("auto-align-div-height")) {
+        row = alignables[i].closest(".parent");
         alignableHeight = alignables[i].offsetHeight;
         rowHeight = row.offsetHeight;
-        alignables[i].style.marginTop = (rowHeight-alignableHeight)/2 +"px"
+        alignables[i].style.marginTop =
+          (rowHeight - alignableHeight) / 2 + "px";
       }
     }
   }
