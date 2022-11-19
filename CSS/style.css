@@ -681,7 +681,7 @@ p.demos {
   -moz-animation-delay: 3s;
   -ms-animation-delay: 3s;
   animation-delay: 3s;
-} 
+}
 .sp-container h2.frame-3 {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
@@ -1033,6 +1033,6 @@ ul {
   margin-bottom: unset;
 }
 
-#toast{
+#toast {
   z-index: 999;
 }

@@ -63,8 +63,8 @@ function ContentCardContentPlacing(numOfCard) {
     h2 = "7. cikk";
     p =
       "A törvény előtt mindenki egyenlő, és minden megkülönböztetés nélkül joga van a törvény egyenlő védelméhez. Mindenkit egyenlő védelem illet meg a jelen Nyilatkozatot sértő minden megkülönböztetéssel és minden ilyen megkülönböztetésre irányuló felbujtással szemben.";
-    img = "IMG/7.cikk.jpg"
-   }
+    img = "IMG/7.cikk.jpg";
+  }
 
   if (numOfCard == "3") {
     h2 = "8. cikk";
@@ -76,7 +76,7 @@ function ContentCardContentPlacing(numOfCard) {
     h2 = "12. cikk";
     p =
       "Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez.";
-    img = "IMG/12.cikk.jpg"  
+    img = "IMG/12.cikk.jpg";
   }
   if (numOfCard == 5) {
     h2 = "16. cikk";
@@ -95,7 +95,7 @@ function ContentCardContentPlacing(numOfCard) {
       "Mindenkinek, aki dolgozik, olyan méltányos és kielégítő fizetéshez van joga, amely számára és családja számára az emberi méltóságnak megfelelő megélhetést biztosít, és amelyet szükség esetén a szociális védelem összes egyéb eszközei egészítenek ki.",
       "Minden személynek joga van, hogy érdekeinek védelme céljából másokkal együtt szakszervezet alapítson vagy szakszervezethez csatlakozzon.",
     ];
-    img = "IMG/23.cikk.jpg"
+    img = "IMG/23.cikk.jpg";
   }
   let buttons =
     '<div class="auto-align-dom"><button type="button" class="auto-align-button auto-align btn btn-outline-info px-3 mx-3 float-start"><a class="text-decoration-none  text-dark" href="https://www.coe.int/hu/web/compass/the-universal-declaration-of-human-rights-full-version-">Forrás</a></button></div>' +
@@ -365,4 +365,3 @@ function startUp(ver) {
     autoAlignment(false);
   }
 }
-
