@@ -382,6 +382,13 @@ article:hover a div {
     font-size: 16px;
   }
 }
+
+/*Another navbar*/
+
+.navbar{
+  background-color: rgb(107, 23, 23);
+}
+
 /*Navbar vége*/
 
 /*Main card kezdete*/
