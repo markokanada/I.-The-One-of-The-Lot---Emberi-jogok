@@ -59,7 +59,6 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="banner-text">
-                            <h2>Üdvözlünk a Neumann János Informatikai Technikum <span>2022 évi&nbsp;2.projekt oldalán!</span> </h2>
                             <h2>Üdvözlünk a Neumann János Informatikai Technikum <span>emberi jogokat&nbsp;bemutató oldalán!</span> </h2>
                             <p>A weboldal a Neumann János Informatikai Technikum megbízásából készült.</p>
                             <i class="fas fa-angle-double-down text-center fa-3x arrow"></i>
@@ -107,12 +106,12 @@
                 <img class="mx-auto img-fluid" src="../IMG/map_1_modded.gif" usemap="#image-map">
 
                 <map name="image-map">
-                    <area onclick="ContentScreenToggler(1,true)" target="" alt="US" title="US"  coords="95,93,8" shape="circle">
-                    <area onclick="ContentScreenToggler(1,true)" target="" alt="GB" title="GB"  coords="239,81,10" shape="circle">
-                    <area onclick="ContentScreenToggler(1,true)" target="" alt="HU" title="HU"  coords="281,99,8" shape="circle">
-                    <area onclick="ContentScreenToggler(1,true)" target="" alt="AF" title="AF" coords="349,117,9" shape="circle">
-                    <area onclick="ContentScreenToggler(1,true)" target="" alt="QA" title="QA"  coords="326,140,8" shape="circle">
-                    <area onclick="ContentScreenToggler(1,true)" target="" alt="UA" title="UA"  coords="310,147,7" shape="circle">
+                    <area onclick="ContentScreenToggler(3,true)" target="" alt="US" title="US"  coords="95,93,8" shape="circle">
+                    <area onclick="ContentScreenToggler(3,true)" target="" alt="GB" title="GB"  coords="239,81,10" shape="circle">
+                    <area onclick="ContentScreenToggler(3,true)" target="" alt="HU" title="HU"  coords="281,99,8" shape="circle">
+                    <area onclick="ContentScreenToggler(3,true)" target="" alt="AF" title="AF" coords="349,117,9" shape="circle">
+                    <area onclick="ContentScreenToggler(3,true)" target="" alt="QA" title="QA"  coords="326,140,8" shape="circle">
+                    <area onclick="ContentScreenToggler(3,true)" target="" alt="UA" title="UA"  coords="310,147,7" shape="circle">
                 </map>
             </div>
         </div>
@@ -169,6 +168,8 @@
   var globalResizeTimer = null;
   $(window).resize(function () {
     autoAlignment(false);
+    ContentScreenCardSizing();
+    ContentScreenPositioning();
   });</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </html>
