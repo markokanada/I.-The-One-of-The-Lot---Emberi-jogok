@@ -413,11 +413,7 @@ article:hover a div {
 /*Content kezdete*/
 
 .leaders li {
-  padding: 1%;
-}
-
-.leaders {
-  margin-right: 0% !important;
+  padding: 0.9%;
 }
 
 .content-ul {
