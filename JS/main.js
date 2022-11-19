@@ -403,3 +403,22 @@ function startUp(ver) {
     autoAlignment(false);
   }
 }
+
+function map_sizer(size){
+  var w = size;
+
+  if (w <= 500) {
+    map = document.getElementsByClassName("map-big")[0]
+    map.setAttribute(
+      "style",
+      "display: none"
+    );
+  }
+  else {
+    map = document.getElementsByClassName("map-small")[0]
+    map.setAttribute(
+      "style",
+      "display: none"
+    );
+  }
+}
