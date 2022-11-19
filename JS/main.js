@@ -330,12 +330,12 @@ function beforeTro() {
   );
 }
 
-function toast(){
-  let toastElList = [].slice.call(document.querySelectorAll('.toast'))
-  let toastList = toastElList.map(function(toastEl) {
-      return new bootstrap.Toast(toastEl)
-  })
-  toastList[0].show()
+function toast() {
+  let toastElList = [].slice.call(document.querySelectorAll(".toast"));
+  let toastList = toastElList.map(function (toastEl) {
+    return new bootstrap.Toast(toastEl);
+  });
+  toastList[0].show();
 }
 
 function startUp(ver) {
@@ -351,7 +351,7 @@ function startUp(ver) {
     } else {
       afterTro(1);
     }
-    toast()
+    toast();
   }
   if (ver == 2) {
     ContentScreenToggler();
