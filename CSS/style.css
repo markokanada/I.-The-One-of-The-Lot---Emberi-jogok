@@ -948,3 +948,6 @@ p.demos {
 }
 
 body.second{background:linear-gradient(#2a3e4d, #255c72);}
+p,ul{
+  margin-bottom: unset;
+}
