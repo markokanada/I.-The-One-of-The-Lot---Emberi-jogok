@@ -586,7 +586,7 @@ article:hover a div {
   .content-card {
     left: auto;
     right: auto;
-    top: 595px !important;
+    /*top: 595px !important;*/
     height: 100vmax;
   }
 }
@@ -681,13 +681,13 @@ p.demos {
   -moz-animation-delay: 3s;
   -ms-animation-delay: 3s;
   animation-delay: 3s;
-} /*
+} 
 .sp-container h2.frame-3 {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   -ms-animation-delay: 6s;
   animation-delay: 6s;
-}*/
+}
 .sp-container h2.frame-4 {
   /*font-size: 200px;*/
   -webkit-animation-delay: 9s;
