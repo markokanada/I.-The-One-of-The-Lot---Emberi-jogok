@@ -681,7 +681,7 @@ p.demos {
   -moz-animation-delay: 3s;
   -ms-animation-delay: 3s;
   animation-delay: 3s;
-}/*
+} /*
 .sp-container h2.frame-3 {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
@@ -725,80 +725,79 @@ p.demos {
 }
 
 @media screen and (min-width: 733px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 90px;
   }
 }
 
 @media screen and (max-width: 405px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 85px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 80px;
   }
 }
 
 @media screen and (max-width: 390px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 75px;
   }
 }
 
 @media screen and (max-width: 336px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 70px;
   }
 }
 
-
 @media screen and (max-width: 312px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 65px;
   }
 }
 
 @media screen and (max-width: 290px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 60px;
   }
 }
 
 @media screen and (max-width: 270px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 55px;
   }
 }
 
 @media screen and (max-width: 247px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 220px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 45px;
   }
 }
 
 @media screen and (max-width: 196px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 175px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 35px;
   }
 }
 
 @media screen and (max-width: 154px) {
-  .sp-container h2{
+  .sp-container h2 {
     font-size: 30px;
   }
 }
@@ -1026,7 +1025,10 @@ p.demos {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-body.second{background:linear-gradient(#2a3e4d, #255c72);}
-p,ul{
+body.second {
+  background: linear-gradient(#2a3e4d, #255c72);
+}
+p,
+ul {
   margin-bottom: unset;
 }

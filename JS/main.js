@@ -97,8 +97,9 @@ function ContentCardContentPlacing(numOfCard) {
   let buttons =
     '<div class="auto-align-dom"><button type="button" class="auto-align-button auto-align btn btn-outline-info px-3 mx-3 float-start"><a class="text-decoration-none  text-dark" href="https://www.coe.int/hu/web/compass/the-universal-declaration-of-human-rights-full-version-">Forrás</a></button></div>' +
     '<div class="auto-align-dom"><button type="button" class="auto-align-button auto-align btn btn-outline-primary px-3 mx-3 float-end"><a class="text-decoration-none  text-dark" href="HTML/side2.html">Tovább a térképhez</a></button></div>';
-    let innerHtml = "<h2 class='auto-align-h2'>" + h2 + "</h2>" + "<ul class='auto-align-ul'>";
-    if (ulElements.length > 0) {
+  let innerHtml =
+    "<h2 class='auto-align-h2'>" + h2 + "</h2>" + "<ul class='auto-align-ul'>";
+  if (ulElements.length > 0) {
     for (let i = 0; i < ulElements.length; i++) {
       innerHtml = innerHtml + "<li>" + ulElements[i] + "</li>";
     }
@@ -172,7 +173,7 @@ function autoAlignment(isTheAligmentFromContentCard) {
   if (isTheAligmentFromContentCard) {
     for (let i = 0; i < numberOfAlignables; i++) {
       if (alignables[i].classList.contains("auto-align-p")) {
-        let h2Size = Math.ceil(h2.offsetHeight)+1;
+        let h2Size = Math.ceil(h2.offsetHeight) + 1;
         let buttonSize = button.offsetHeight;
         //maxWidth = doms[i].offsetWidth;
         maxHeight = doms[i].offsetHeight;
@@ -229,18 +230,34 @@ function autoAlignment(isTheAligmentFromContentCard) {
             alignables[i].style.fontSize = newSize + "px";
             alignables[i + 1].style.fontSize = newSize + "px";
           }
-          if(typeof document.getElementsByClassName("auto-align-ul")[0] != "undefined"){
-            size = document.getElementsByClassName("auto-align-ul")[0].offsetHeight
+          if (
+            typeof document.getElementsByClassName("auto-align-ul")[0] !=
+            "undefined"
+          ) {
+            size =
+              document.getElementsByClassName("auto-align-ul")[0].offsetHeight;
           }
-          if(typeof document.getElementsByClassName("auto-align-p")[0] != "undefined"){
-            size = document.getElementsByClassName("auto-align-p")[0].offsetHeight;
+          if (
+            typeof document.getElementsByClassName("auto-align-p")[0] !=
+            "undefined"
+          ) {
+            size =
+              document.getElementsByClassName("auto-align-p")[0].offsetHeight;
           }
-          
-          maxHeight = document.getElementsByClassName('content-card')[0].offsetHeight;
+
+          maxHeight =
+            document.getElementsByClassName("content-card")[0].offsetHeight;
           currentButtonSize = alignables[i].offsetHeight;
-          console.log({"Size":size,"marginValue":(maxHeight-maxHeight/10-currentButtonSize + "px"),"currentButtonSize":currentButtonSize,"maxHeight":maxHeight})
-          alignables[i].style.marginTop = maxHeight-maxHeight/10-currentButtonSize-size + "px";
-          alignables[i + 1].style.marginTop = maxHeight-maxHeight/10-currentButtonSize-size + "px";
+          console.log({
+            Size: size,
+            marginValue: maxHeight - maxHeight / 10 - currentButtonSize + "px",
+            currentButtonSize: currentButtonSize,
+            maxHeight: maxHeight,
+          });
+          alignables[i].style.marginTop =
+            maxHeight - maxHeight / 10 - currentButtonSize - size + "px";
+          alignables[i + 1].style.marginTop =
+            maxHeight - maxHeight / 10 - currentButtonSize - size + "px";
         }
       }
       /*
