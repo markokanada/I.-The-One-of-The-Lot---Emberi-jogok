@@ -385,7 +385,7 @@ article:hover a div {
 
 /*Another navbar*/
 
-.navbar{
+.navbar {
   background-color: rgb(107, 23, 23);
 }
 
@@ -1039,6 +1039,6 @@ ul {
 #toast {
   z-index: 999;
 }
-.offcanvas{
+.offcanvas {
   z-index: 10000;
 }

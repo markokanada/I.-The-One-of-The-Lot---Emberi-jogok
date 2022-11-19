@@ -97,35 +97,35 @@ function ContentCardContentPlacing(numOfCard) {
     ];
     img = "IMG/23.cikk.jpg";
   }
- // history map
+  // history map
   if (numOfCard == 7) {
     h2 = "23. cikk";
-    p= "";
+    p = "";
     img = "IMG/23.cikk.jpg";
   }
   if (numOfCard == 8) {
     h2 = "23. cikk";
-    p= "";
+    p = "";
     img = "IMG/23.cikk.jpg";
   }
   if (numOfCard == 9) {
     h2 = "23. cikk";
-    p= "";
+    p = "";
     img = "IMG/23.cikk.jpg";
   }
   if (numOfCard == 10) {
     h2 = "23. cikk";
-    p= "";
+    p = "";
     img = "IMG/23.cikk.jpg";
   }
   if (numOfCard == 11) {
     h2 = "23. cikk";
-    p= "";
+    p = "";
     img = "IMG/23.cikk.jpg";
   }
   if (numOfCard == 12) {
     h2 = "23. cikk";
-    p= "";
+    p = "";
     img = "IMG/23.cikk.jpg";
   }
   let buttons =
@@ -404,21 +404,14 @@ function startUp(ver) {
   }
 }
 
-function map_sizer(size){
+function map_sizer(size) {
   var w = size;
 
   if (w <= 500) {
-    map = document.getElementsByClassName("map-big")[0]
-    map.setAttribute(
-      "style",
-      "display: none"
-    );
-  }
-  else {
-    map = document.getElementsByClassName("map-small")[0]
-    map.setAttribute(
-      "style",
-      "display: none"
-    );
+    map = document.getElementsByClassName("map-big")[0];
+    map.setAttribute("style", "display: none");
+  } else {
+    map = document.getElementsByClassName("map-small")[0];
+    map.setAttribute("style", "display: none");
   }
 }
