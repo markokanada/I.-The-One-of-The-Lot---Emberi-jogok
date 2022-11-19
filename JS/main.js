@@ -362,3 +362,4 @@ function startUp(ver) {
     autoAlignment(false);
   }
 }
+
