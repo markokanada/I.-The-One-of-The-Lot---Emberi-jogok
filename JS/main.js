@@ -330,6 +330,14 @@ function beforeTro() {
   );
 }
 
+function toast(){
+  let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  let toastList = toastElList.map(function(toastEl) {
+      return new bootstrap.Toast(toastEl)
+  })
+  toastList[0].show()
+}
+
 function startUp(ver) {
   if (ver == 1) {
     LoadAnimations();
@@ -343,6 +351,7 @@ function startUp(ver) {
     } else {
       afterTro(1);
     }
+    toast()
   }
   if (ver == 2) {
     ContentScreenToggler();
