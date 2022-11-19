@@ -1039,3 +1039,6 @@ ul {
 #toast {
   z-index: 999;
 }
+.offcanvas{
+  z-index: 10000;
+}
