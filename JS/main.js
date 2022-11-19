@@ -397,6 +397,7 @@ function startUp(ver) {
   if (ver == 2) {
     ContentScreenToggler();
     autoAlignment(false);
+    map_sizer();
   }
 
   if (ver == 3) {
@@ -404,14 +405,18 @@ function startUp(ver) {
   }
 }
 
-function map_sizer(size) {
-  var w = size;
+function map_sizer() {
+  var w = window.innerWidth;
 
   if (w <= 500) {
     map = document.getElementsByClassName("map-big")[0];
     map.setAttribute("style", "display: none");
+    map2 = document.getElementsByClassName("map-small")[0];
+    map2.setAttribute("style", "display: flex");
   } else {
-    map = document.getElementsByClassName("map-small")[0];
-    map.setAttribute("style", "display: none");
+    map = document.getElementsByClassName("map-big")[0];
+    map.setAttribute("style", "display: flex");
+    map2 = document.getElementsByClassName("map-small")[0];
+    map2.setAttribute("style", "display: none");
   }
 }
