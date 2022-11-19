@@ -70,7 +70,7 @@ function ContentCardContentPlacing(numOfCard) {
     h2 = "8. cikk";
     p =
       "Minden személynek joga van az alkotmányban vagy a törvényben részére biztosított alapvető jogokat sértő eljárások ellen az illetékes hazai bíróságokhoz tényleges jogorvoslatért folyamodni.";
-    img = "../IMG/8.cikk.jpg";
+    img = "IMG/8.cikk.jpg";
   }
   if (numOfCard == 4) {
     h2 = "12. cikk";
@@ -95,6 +95,37 @@ function ContentCardContentPlacing(numOfCard) {
       "Mindenkinek, aki dolgozik, olyan méltányos és kielégítő fizetéshez van joga, amely számára és családja számára az emberi méltóságnak megfelelő megélhetést biztosít, és amelyet szükség esetén a szociális védelem összes egyéb eszközei egészítenek ki.",
       "Minden személynek joga van, hogy érdekeinek védelme céljából másokkal együtt szakszervezet alapítson vagy szakszervezethez csatlakozzon.",
     ];
+    img = "IMG/23.cikk.jpg";
+  }
+ // history map
+  if (numOfCard == 7) {
+    h2 = "23. cikk";
+    p= "";
+    img = "IMG/23.cikk.jpg";
+  }
+  if (numOfCard == 8) {
+    h2 = "23. cikk";
+    p= "";
+    img = "IMG/23.cikk.jpg";
+  }
+  if (numOfCard == 9) {
+    h2 = "23. cikk";
+    p= "";
+    img = "IMG/23.cikk.jpg";
+  }
+  if (numOfCard == 10) {
+    h2 = "23. cikk";
+    p= "";
+    img = "IMG/23.cikk.jpg";
+  }
+  if (numOfCard == 11) {
+    h2 = "23. cikk";
+    p= "";
+    img = "IMG/23.cikk.jpg";
+  }
+  if (numOfCard == 12) {
+    h2 = "23. cikk";
+    p= "";
     img = "IMG/23.cikk.jpg";
   }
   let buttons =
