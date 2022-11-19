@@ -681,15 +681,15 @@ p.demos {
   -moz-animation-delay: 3s;
   -ms-animation-delay: 3s;
   animation-delay: 3s;
-}
+}/*
 .sp-container h2.frame-3 {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   -ms-animation-delay: 6s;
   animation-delay: 6s;
-}
+}*/
 .sp-container h2.frame-4 {
-  font-size: 200px;
+  /*font-size: 200px;*/
   -webkit-animation-delay: 9s;
   -moz-animation-delay: 9s;
   -ms-animation-delay: 9s;
@@ -722,6 +722,85 @@ p.demos {
   -moz-animation-delay: 14s;
   -ms-animation-delay: 14s;
   animation-delay: 14s;
+}
+
+@media screen and (min-width: 733px) {
+  .sp-container h2{
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .sp-container h2{
+    font-size: 85px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sp-container h2{
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .sp-container h2{
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  .sp-container h2{
+    font-size: 70px;
+  }
+}
+
+
+@media screen and (max-width: 312px) {
+  .sp-container h2{
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .sp-container h2{
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .sp-container h2{
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 247px) {
+  .sp-container h2{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 220px) {
+  .sp-container h2{
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 196px) {
+  .sp-container h2{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 175px) {
+  .sp-container h2{
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 154px) {
+  .sp-container h2{
+    font-size: 30px;
+  }
 }
 
 /*animation end*/
