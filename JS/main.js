@@ -56,25 +56,27 @@ function ContentCardContentPlacing(numOfCard) {
     h2 = "2. cikk";
     p =
       "A jelen nyilatkozatban kinyilvánított összes jogok és szabadságok fajra, színre, nemre, nyelvre, vallásra, politikai vagy más véleményre, nemzeti vagy társadalmi származásra, vagyonra, születésre vagy más körülményre vonatkozó mindennemű megkülönböztetés nélkül mindenkit megilletnek. Ezenfelül nem lehet semmiféle megkülönböztetést tenni annak az országnak vagy területnek a politikai, jogi vagy nemzetközi helyzete alapján sem, amelynek a személy állampolgára, aszerint, hogy az illető ország vagy terület független, gyámság alatt áll, nem autonóm vagy szuverenitása bármely vonatkozásban korlátozott.";
-    img = "IMG/abuse_1.jpg";
+    img = "IMG/2.cikk.png";
   }
 
   if (numOfCard == 2) {
     h2 = "7. cikk";
     p =
       "A törvény előtt mindenki egyenlő, és minden megkülönböztetés nélkül joga van a törvény egyenlő védelméhez. Mindenkit egyenlő védelem illet meg a jelen Nyilatkozatot sértő minden megkülönböztetéssel és minden ilyen megkülönböztetésre irányuló felbujtással szemben.";
-  }
+    img = "IMG/7.cikk.jpg"
+   }
 
   if (numOfCard == "3") {
     h2 = "8. cikk";
     p =
       "Minden személynek joga van az alkotmányban vagy a törvényben részére biztosított alapvető jogokat sértő eljárások ellen az illetékes hazai bíróságokhoz tényleges jogorvoslatért folyamodni.";
-    img = "IMG/abuse_2.jpg";
+    img = "IMG/8.cikk.jpg";
   }
   if (numOfCard == 4) {
     h2 = "12. cikk";
     p =
       "Senkinek magánéletébe, családi ügyeibe, otthonába vagy levelezésébe nem szabad önkényesen beavatkozni, sem pedig becsületében vagy jó hírnevében megsérteni. Minden személynek joga van az ilyen beavatkozásokkal vagy sértésekkel szemben a törvény védelméhez.";
+    img = "IMG/12.cikk.jpg"  
   }
   if (numOfCard == 5) {
     h2 = "16. cikk";
@@ -83,7 +85,7 @@ function ContentCardContentPlacing(numOfCard) {
       "Házasságot csak a jövendő házastársak szabad és teljes beleegyezésével lehet kötni.",
       "A család a társadalom természetes és alapvető alkotóeleme, és joga van a társadalom, valamint az állam védelmére.",
     ];
-    img = "IMG/abuse_3.jpg";
+    img = "IMG/16.cikk.png";
   }
   if (numOfCard == 6) {
     h2 = "23. cikk";
@@ -93,6 +95,7 @@ function ContentCardContentPlacing(numOfCard) {
       "Mindenkinek, aki dolgozik, olyan méltányos és kielégítő fizetéshez van joga, amely számára és családja számára az emberi méltóságnak megfelelő megélhetést biztosít, és amelyet szükség esetén a szociális védelem összes egyéb eszközei egészítenek ki.",
       "Minden személynek joga van, hogy érdekeinek védelme céljából másokkal együtt szakszervezet alapítson vagy szakszervezethez csatlakozzon.",
     ];
+    img = "IMG/23.cikk.jpg"
   }
   let buttons =
     '<div class="auto-align-dom"><button type="button" class="auto-align-button auto-align btn btn-outline-info px-3 mx-3 float-start"><a class="text-decoration-none  text-dark" href="https://www.coe.int/hu/web/compass/the-universal-declaration-of-human-rights-full-version-">Forrás</a></button></div>' +
