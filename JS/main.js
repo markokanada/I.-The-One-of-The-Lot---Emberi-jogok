@@ -53,9 +53,9 @@ function ContentCardContentPlacing(numOfCard) {
   let p = "";
   let img = "";
   if (numOfCard == 1) {
-    h2 = "2. cikk";
+    h2 = "3. cikk";
     p =
-      "A jelen nyilatkozatban kinyilvánított összes jogok és szabadságok fajra, színre, nemre, nyelvre, vallásra, politikai vagy más véleményre, nemzeti vagy társadalmi származásra, vagyonra, születésre vagy más körülményre vonatkozó mindennemű megkülönböztetés nélkül mindenkit megilletnek. Ezenfelül nem lehet semmiféle megkülönböztetést tenni annak az országnak vagy területnek a politikai, jogi vagy nemzetközi helyzete alapján sem, amelynek a személy állampolgára, aszerint, hogy az illető ország vagy terület független, gyámság alatt áll, nem autonóm vagy szuverenitása bármely vonatkozásban korlátozott.";
+      "Minden személynek joga van az élethez, a szabadsághoz és a személyi biztonsághoz."
     img = ".IMG/2.cikk.png";
   }
 
