@@ -101,32 +101,32 @@ function ContentCardContentPlacing(numOfCard) {
   if (numOfCard == 7) {
     h2 = "23. cikk";
     p = "";
-    img = "IMG/23.cikk.jpg";
+    img = "../IMG/23.cikk.jpg";
   }
   if (numOfCard == 8) {
     h2 = "23. cikk";
     p = "";
-    img = "IMG/23.cikk.jpg";
+    img = "../IMG/23.cikk.jpg";
   }
   if (numOfCard == 9) {
     h2 = "23. cikk";
     p = "";
-    img = "IMG/23.cikk.jpg";
+    img = "../IMG/23.cikk.jpg";
   }
   if (numOfCard == 10) {
     h2 = "16. cikk";
     p = "Sajnos hiába minden erőfeszítés a háborúk okozta éhezés és nyomorgás sokszor arra kényszeríti a társadalmakat, hogy nehéz néha komoly erkölcsi aggályokat magával vonó döntéseket hozni, amelyek persze sokszor az ENSZ Emberi Jogi Nyilatkozatának sem felelnek meg. Ezekben a helyzetekben sajnálatos módon nem lehet semmilyen rendelettel vagy az adott kormány felelőségre vonásával helyre állítani az emberi jogokat, hiszen nem egy törvény vagy rendelet sérti meg azokat, hanem az civilek kényszerülnek olyan helyzetbe amikor életben maradásuk érdekében olyan döntéseket kell hozniuk, amivel megsértik a polgártársaik sokszor családtagjaik jogait. Ez a helyzet Afganisztánban is, ahol a hosszú évek óta tartó harcok miatt a nyomorgásban élő családoknak olyan drasztikus lépéseket kell tennie, mint például, hogy saját gyermekeiket pénzért cserébe eladják feleségnek. Tisztán látható, hogy ebben az esetben az emberek szorulnak, olyan helyzetbe, hogy egymás jogait sértik meg. Ez az egyik legszomorúbb helyzet, mert nehéz rajta változtatni. Itt az egyetlen megoldás a háborúk elkerülése és a háború sújtotta országok mihamarabbi újjá építése. Az ENSZ különböző szervezetei ebben is segítenek.";
-    img = "IMG/23.cikk.jpg";
+    img = "../IMG/16.cikk.jpg";
   }
   if (numOfCard == 11) {
-    h2 = "23. cikk";
-    p = "";
-    img = "IMG/23.cikk.jpg";
+    h2 = "7. cikk";
+    p = "A nem rég kezdődő Katar által rendezett labdarugó világbajnokság kapcsán egyre többször merültek fel a rendező ország emberi jogokhoz való viszonya miatt kétségeket felvető hangok. Az olaj tartalékjai miatt, komoly piaci szerepet betöltő apró ország jogai nem túlzóan támogatja a különböző heteroszexuálistól éltérő nemi irányultságokkal rendelkező személyeket és emellett a nők jogait is erősen korlátozzák, a külföldről érkező vendégmunkásokkal szemben milyen bánásmódot enged meg az ország jog alkotása még szó sem esett. A katari helyzet sajnos elég sok sebből vérzik és hiába tagja az ENSZ-nek Katar nem túl sok a változás. Azáltal, hogy az említett csoportok képviselőit nem kapnak meg minden őket illető jogot, így a törvény előtt sem tekinthetők egyenlőnek. Reméljük Katar is hamarosan ráeszmél, hogy ideje felülvizsgálnia, hogy mi a jó és mi a rossz számukra.";
+    img = "../IMG/7.cikk.jpg";
   }
   if (numOfCard == 12) {
     h2 = "23. cikk";
     p = "";
-    img = "IMG/23.cikk.jpg";
+    img = "../IMG/23.cikk.jpg";
   }
   let buttons =
     '<div class="auto-align-dom"><button type="button" class="auto-align-button auto-align btn btn-outline-info px-3 mx-3 float-start"><a class="text-decoration-none  text-dark" href="https://www.coe.int/hu/web/compass/the-universal-declaration-of-human-rights-full-version-">Forrás</a></button></div>' +
