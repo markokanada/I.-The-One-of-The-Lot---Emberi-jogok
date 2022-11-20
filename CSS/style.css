@@ -1000,11 +1000,11 @@ p.demos {
   color: blue;
 }
 #main-ul li:nth-child(3) {
-  color: yellow;
+  color: red;
 }
 
 #main-ul li:nth-child(5) {
-  color: orange;
+  color: yellow;
 }
 
 #main-ul li:nth-child(1) {
@@ -1012,7 +1012,7 @@ p.demos {
 }
 
 #main-ul li:nth-child(6) {
-  color: red;
+  color: orange;
 }
 
 .vertical-align-middle {

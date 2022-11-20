@@ -53,24 +53,24 @@ function ContentCardContentPlacing(numOfCard) {
   let p = "";
   let img = "";
   if (numOfCard == 1) {
-    h2 = "3. cikk";
+    h2 = "2. cikk";
     p =
-      "Minden személynek joga van az élethez, a szabadsághoz és a személyi biztonsághoz."
+      "A jelen nyilatkozatban kinyilvánított összes jogok és szabadságok fajra, színre, nemre, nyelvre, vallásra, politikai vagy más véleményre, nemzeti vagy társadalmi származásra, vagyonra, születésre vagy más körülményre vonatkozó mindennemű megkülönböztetés nélkül mindenkit megilletnek. Ezenfelül nem lehet semmiféle megkülönböztetést tenni annak az országnak vagy területnek a politikai, jogi vagy nemzetközi helyzete alapján sem, amelynek a személy állampolgára, aszerint, hogy az illető ország vagy terület független, gyámság alatt áll, nem autonóm vagy szuverenitása bármely vonatkozásban korlátozott. "
     img = ".IMG/2.cikk.png";
   }
 
   if (numOfCard == 2) {
-    h2 = "7. cikk";
+    h2 = "3. cikk";
     p =
-      "A törvény előtt mindenki egyenlő, és minden megkülönböztetés nélkül joga van a törvény egyenlő védelméhez. Mindenkit egyenlő védelem illet meg a jelen Nyilatkozatot sértő minden megkülönböztetéssel és minden ilyen megkülönböztetésre irányuló felbujtással szemben.";
+      "Minden személynek joga van az élethez, a szabadsághoz és a személyi biztonsághoz.";
     img = "IMG/7.cikk.jpg";
   }
 
   if (numOfCard == "3") {
-    h2 = "8. cikk";
+    h2 = "7. cikk";
     p =
-      "Minden személynek joga van az alkotmányban vagy a törvényben részére biztosított alapvető jogokat sértő eljárások ellen az illetékes hazai bíróságokhoz tényleges jogorvoslatért folyamodni.";
-    img = "IMG/8.cikk.jpg";
+      "A törvény előtt mindenki egyenlő, és minden megkülönböztetés nélkül joga van a törvény egyenlő védelméhez. Mindenkit egyenlő védelem illet meg a jelen Nyilatkozatot sértő minden megkülönböztetéssel és minden ilyen megkülönböztetésre irányuló felbujtással szemben.";
+    img = "IMG/7.cikk.jpg";
   }
   if (numOfCard == 4) {
     h2 = "12. cikk";
@@ -114,8 +114,8 @@ function ContentCardContentPlacing(numOfCard) {
     img = "IMG/23.cikk.jpg";
   }
   if (numOfCard == 10) {
-    h2 = "23. cikk";
-    p = "";
+    h2 = "16. cikk";
+    p = "Sajnos hiába minden erőfeszítés a háborúk okozta éhezés és nyomorgás sokszor arra kényszeríti a társadalmakat, hogy nehéz néha komoly erkölcsi aggályokat magával vonó döntéseket hozni, amelyek persze sokszor az ENSZ Emberi Jogi Nyilatkozatának sem felelnek meg. Ezekben a helyzetekben sajnálatos módon nem lehet semmilyen rendelettel vagy az adott kormány felelőségre vonásával helyre állítani az emberi jogokat, hiszen nem egy törvény vagy rendelet sérti meg azokat, hanem az civilek kényszerülnek olyan helyzetbe amikor életben maradásuk érdekében olyan döntéseket kell hozniuk, amivel megsértik a polgártársaik sokszor családtagjaik jogait. Ez a helyzet Afganisztánban is, ahol a hosszú évek óta tartó harcok miatt a nyomorgásban élő családoknak olyan drasztikus lépéseket kell tennie, mint például, hogy saját gyermekeiket pénzért cserébe eladják feleségnek. Tisztán látható, hogy ebben az esetben az emberek szorulnak, olyan helyzetbe, hogy egymás jogait sértik meg. Ez az egyik legszomorúbb helyzet, mert nehéz rajta változtatni. Itt az egyetlen megoldás a háborúk elkerülése és a háború sújtotta országok mihamarabbi újjá építése. Az ENSZ különböző szervezetei ebben is segítenek.";
     img = "IMG/23.cikk.jpg";
   }
   if (numOfCard == 11) {
